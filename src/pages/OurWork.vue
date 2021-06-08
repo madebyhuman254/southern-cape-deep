@@ -1,14 +1,16 @@
 <template>
-  <div>
-    <h1>Our Work</h1>
-    <p>Here is some information. This is the our work page</p>
-  </div>
+  <our-work-detail></our-work-detail>
 </template>
 
 <script>
+import OurWorkDetail from '../components/ourwork/OurWorkDetail.vue';
 export default {
-  name: "OurWork", //this is the name of the component
+  components: { OurWorkDetail }
 };
 </script>
 
-<style></style>
+<style scoped>
+h2 {
+  margin: 0.5rem 0;
+}
+</style>

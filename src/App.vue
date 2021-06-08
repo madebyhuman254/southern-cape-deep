@@ -46,7 +46,7 @@ body {
 }
 
 main {
-  width: 800px;
+  width: 1200px; /*800px before change*/
   margin: calc(var(--nav-height) + 40px) auto 0 auto;
 }
 

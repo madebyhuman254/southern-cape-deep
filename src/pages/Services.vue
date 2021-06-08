@@ -1,14 +1,16 @@
 <template>
-  <div>
-    <h1>Services</h1>
-    <p>Here is some information. This is the services page</p>
-  </div>
+  <services-detail></services-detail>
 </template>
 
 <script>
+import ServicesDetail from '../components/services/ServicesDetail.vue';
 export default {
-  name: "Services", //this is the name of the component
+  components: { ServicesDetail }
 };
 </script>
 
-<style></style>
+<style scoped>
+h2 {
+  margin: 0.5rem 0;
+}
+</style>
