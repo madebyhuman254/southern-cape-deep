@@ -41,6 +41,8 @@ a.router-link-active {
   padding: 0.3em 1.2em;
   margin: 0 0.1em 0.1em 0;
   border: 0.16em solid rgba(255, 255, 255, 0);
+  cursor: pointer;
+
 }
 
 h1 {

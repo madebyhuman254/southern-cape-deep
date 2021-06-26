@@ -5,14 +5,20 @@
       <h1>Delivering the finest <br> quality to your <br> doorstep</h1>
     </section>
       <section>
-        <button class="btn btn-work" @click="ourWork">Our Work</button>
+        <button class="btn btn-work" @click="goToWork()">Our Work</button>
       </section>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    goToWork(){
+      this.$router.push('/ourwork');
+    }
+  }
+};
 </script>
 
 <style scoped>
@@ -27,6 +33,7 @@ export default {};
   padding: 0.7em 1.7em;
   margin: 0 0.5em 0.5em 0;
   border: 0.16em solid rgba(255, 255, 255, 0);
+  cursor: pointer;
 }
 h1{
   margin: 0;
