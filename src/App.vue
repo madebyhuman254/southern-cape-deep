@@ -4,6 +4,9 @@
     <main>
       <router-view></router-view>
     </main>
+    <v-footer>
+      
+    </v-footer>
   </div>
   <!-- <router-view v-slot="slotProps">
     <transition name="route" mode="out-in">
@@ -14,11 +17,13 @@
 
 <script>
 import Navigation from './components/nav/Navigation.vue';
+import Footer from './components/footer/Footer.vue';
 
 export default {
   name: 'app',
   components: {
-    Navigation
+    Navigation,
+    Footer
   }
 };
 </script>
