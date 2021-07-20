@@ -13,7 +13,11 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: "Navigation",
+  data: () => ({
+  })
+};
 </script>
 
 <style scoped>

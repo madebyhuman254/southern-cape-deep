@@ -5,7 +5,7 @@
       <router-view></router-view>
     </main>
     <v-footer>
-      
+      <Footer />
     </v-footer>
   </div>
   <!-- <router-view v-slot="slotProps">
