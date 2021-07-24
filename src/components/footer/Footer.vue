@@ -24,7 +24,7 @@
 
 <script>
   export default {
-    name: "Navigation",
+    name: "Footer",
     data: () => ({
       icons: [
         'fab fa-facebook',

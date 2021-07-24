@@ -24,7 +24,11 @@ export default {
   components: {
     Navigation,
     Footer
-  }
+  },
+
+  data: () => ({
+    //
+  })
 };
 </script>
 
