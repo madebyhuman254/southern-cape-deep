@@ -1,7 +1,7 @@
 <template>
-  <v-container>
+<v-card >
     <v-footer padless>
-      <v-card flat class="text-center">
+      <v-card flat   class=" text-center" width="100%">
         <v-card-text>
           <v-btn
             v-for="icon in icons" :key="icon" class="mx-4" icon>
@@ -19,7 +19,7 @@
         </v-card-text>
       </v-card>
     </v-footer>
-  </v-container>
+</v-card>
 </template>
 
 <script>
@@ -27,10 +27,10 @@
     name: "Footer",
     data: () => ({
       icons: [
-        'fab fa-facebook',
-        'fab fa-twitter',
-        'fab fa-linkedin',
-        'fab fa-instagram',
+        'mdi-facebook',
+        'mdi-twitter',
+        'mdi-linkedin',
+        'mdi-instagram',
       ],
     }),
   }

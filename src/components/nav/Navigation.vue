@@ -1,5 +1,5 @@
 <template>
-  <nav>
+  <!-- <nav>
     <span><router-link to="/">Company Logo</router-link></span>
     <ul>
       <li><router-link to="/home">Home</router-link></li>
@@ -9,13 +9,32 @@
         <button class="btn btn-qoute" @click="getQoute">Get Qoute</button>
       </li>
     </ul>
-  </nav>
+  </nav> -->
+      <v-app-bar
+      app
+      color="primary"
+      dark
+    >
+    <v-app-bar-title>Company Logo</v-app-bar-title>
+
+    <v-spacer></v-spacer>
+        <v-tab
+              v-for="item in items"
+              :key="item"
+              :href="'#tab-' + item"
+            >
+              {{ item }}
+            </v-tab>
+    </v-app-bar>
 </template>
 
 <script>
 export default {
   name: "Navigation",
   data: () => ({
+    items: [
+      'Home', 'About Us', 'Our Work', 'Contact'
+    ]
   })
 };
 </script>

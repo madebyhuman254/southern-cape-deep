@@ -1,39 +1,32 @@
 <template>
-  <div>
+  <v-app>
     <navigation></navigation>
-    <main>
+
+    <v-main>
       <router-view></router-view>
-    </main>
-    <v-footer>
+    </v-main>
       <Footer />
-    </v-footer>
-  </div>
-  <!-- <router-view v-slot="slotProps">
-    <transition name="route" mode="out-in">
-      <component :is="slotProps.Component"></component>
-    </transition>
-  </router-view> -->
+  </v-app>
 </template>
 
 <script>
 import Navigation from './components/nav/Navigation.vue';
 import Footer from './components/footer/Footer.vue';
-
 export default {
-  name: 'app',
-  components: {
+  name: 'App',
+    components: {
     Navigation,
     Footer
   },
 
   data: () => ({
     //
-  })
+  }),
 };
 </script>
-
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 :root {
   --nav-height: 64px;
 }
@@ -54,10 +47,10 @@ body {
   background: #e5e5e5;
 }
 
-main {
+/* main {
   width: 1200px; /*800px before change*/
-  margin: calc(var(--nav-height) + 40px) auto 0 auto;
-}
+  /* margin: calc(var(--nav-height) + 40px) auto 0 auto; */
+/* } */ */
 
 .route-enter-from {
   opacity: 0;
@@ -75,6 +68,11 @@ main {
 
 .route-leave-active {
   transition: all 0.3s ease-in;
+}
+
+.container {
+     width: 1200px; /*800px before change*/
+  margin: calc(var(--nav-height) + 40px) auto 0 auto;
 }
 
 .route-enter-to,
