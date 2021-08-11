@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <section>
       <p>these are some of our services we offer</p>
       <h1>Our Services</h1>

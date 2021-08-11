@@ -4,8 +4,11 @@
       <v-card flat   class=" text-center" width="100%">
         <v-card-text>
           <v-btn
-            v-for="icon in icons" :key="icon" class="mx-4" icon>
-            <v-icon size="24px">{{ icon }}</v-icon>
+            v-for="i in icons" 
+            :key="i" 
+            :to="i.link"
+            class="mx-4" icon link>
+            <v-icon size="24px">{{ i.icon }}</v-icon>
           </v-btn>
        </v-card-text>
       <v-card-text 
@@ -27,11 +30,22 @@
     name: "Footer",
     data: () => ({
       icons: [
-        'mdi-facebook',
-        'mdi-twitter',
-        'mdi-linkedin',
-        'mdi-instagram',
-      ],
+        {
+          icon: 'mdi-facebook',
+          link: 'https://www.facebook.com/'
+        },
+        {
+          icon: 'mdi-twitter',
+          link: 'https://www.twitter.com/'
+        },
+        {
+          icon: 'mdi-linkedin',
+          link: 'https://www.linkedin.com/'
+        },
+        {
+          icon: 'mdi-instagram',
+          link: 'https://www.instagram.com/'
+        }]
     }),
   }
 </script>

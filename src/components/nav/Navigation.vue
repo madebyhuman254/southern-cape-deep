@@ -1,30 +1,20 @@
 <template>
-  <!-- <nav>
-    <span><router-link to="/">Company Logo</router-link></span>
-    <ul>
-      <li><router-link to="/home">Home</router-link></li>
-      <li><router-link to="/ourwork">Our Work</router-link></li>
-      <li><router-link to="/services">Services</router-link></li>
-      <li>
-        <button class="btn btn-qoute" @click="getQoute">Get Qoute</button>
-      </li>
-    </ul>
-  </nav> -->
       <v-app-bar
       app
       color="primary"
       dark
     >
-    <v-app-bar-title>Company Logo</v-app-bar-title>
+    <v-tab to="/">Company Logo</v-tab>
 
     <v-spacer></v-spacer>
-        <v-tab
-              v-for="item in items"
-              :key="item"
-              :href="'#tab-' + item"
-            >
-              {{ item }}
-            </v-tab>
+
+      <v-tab 
+      v-for="(item, i) in items" 
+      :key="i" 
+      :to="item.link" link>
+        <v-icon>{{item.icon}}</v-icon>
+       {{item.text}}
+      </v-tab>
     </v-app-bar>
 </template>
 
@@ -33,7 +23,26 @@ export default {
   name: "Navigation",
   data: () => ({
     items: [
-      'Home', 'About Us', 'Our Work', 'Contact'
+      {
+        icon: 'mdi-home-outline',
+        text: 'Home',
+        link: '/',
+      },
+      {
+        icon: 'mdi-image-multiple-outline',
+        text: 'Our Work',
+        link: '/ourwork',
+      },
+      {
+        icon: 'mdi-clipboard-list-outline',
+        text: 'Services',
+        link: '/services',
+      },
+      {
+        icon: 'mdi-phone-outline',
+        text: 'Contact',
+        link: '/footer',
+      },
     ]
   })
 };

@@ -11,7 +11,7 @@
 
 <script>
 import Navigation from './components/nav/Navigation.vue';
-import Footer from './components/footer/Footer.vue';
+import Footer from './components/footer/FooterDetail.vue';
 export default {
   name: 'App',
     components: {

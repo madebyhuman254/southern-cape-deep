@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-
     <section>
       <p>a sneak peek into our work</p>
       <h1>Our Work</h1>
@@ -8,49 +7,49 @@
     <div class="gr">
 <div class="compare-container">
   <div class="compare-container-images">
-     <compare-two-images 
-     style="flex-grow: 0"
-    leftImage="https://via.placeholder.com/150"
-    rightImage="https://via.placeholder.com/120"
-    :leftImageOpacity="1"
-    :labelsEnable="true"
-    :dividerWidth="'4px'"
-    :dividerWidthOnHover="'40px'"
-    :dividerPosition="45"
-    left-label="Before"
-    right-label="After"
-    :adaptiveHeight="true"
-    :showAnimateArrows="false"
-    :dividerColor="'#007be7'" >
-    </compare-two-images>
+      <compare-two-images 
+      style="flex-grow: 0"
+      leftImage="'@/assets/images/matt-before.jpg'"
+      rightImage="@/assets/images/matt-after.jpg"
+      :leftImageOpacity="1"
+      :labelsEnable="true"
+      :dividerWidth="'4px'"
+      :dividerWidthOnHover="'40px'"
+      :dividerPosition="45"
+      left-label="Before"
+      right-label="After"
+      :adaptiveHeight="true"
+      :showAnimateArrows="false"
+      :dividerColor="'#007be7'" >
+      </compare-two-images>
   </div>
    <div class="content">
-    <h3>Mattress</h3>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis optio adipisci incidunt, molestias assumenda repellat minus reprehenderit, et recusandae quos doloremque quo enim soluta. Delectus perspiciatis pariatur placeat saepe asperiores.
-    Cupiditate saepe, corporis atque a voluptates neque</p>
+      <h3>Mattress</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis optio adipisci incidunt, molestias assumenda repellat minus reprehenderit, et recusandae quos doloremque quo enim soluta. Delectus perspiciatis pariatur placeat saepe asperiores.
+      Cupiditate saepe, corporis atque a voluptates neque</p>
    </div>
 
    <div class="compare-container-images">
-     <compare-two-images 
-     style="flex-grow: 0"
-    leftImage="https://via.placeholder.com/150"
-    rightImage="https://via.placeholder.com/120"
-    :leftImageOpacity="1"
-    :labelsEnable="true"
-    :dividerWidth="'4px'"
-    :dividerWidthOnHover="'40px'"
-    :dividerPosition="45"
-    left-label="Before"
-    right-label="After"
-    :adaptiveHeight="true"
-    :showAnimateArrows="false"
-    :dividerColor="'#007be7'" >
-    </compare-two-images>
+      <compare-two-images 
+      style="flex-grow: 0"
+      leftImage="https://via.placeholder.com/150"
+      rightImage="https://via.placeholder.com/120"
+      :leftImageOpacity="1"
+      :labelsEnable="true"
+      :dividerWidth="'4px'"
+      :dividerWidthOnHover="'40px'"
+      :dividerPosition="45"
+      left-label="Before"
+      right-label="After"
+      :adaptiveHeight="true"
+      :showAnimateArrows="false"
+      :dividerColor="'#007be7'" >
+      </compare-two-images>
   </div>
    <div class="content">
-    <h3>Car Seats</h3>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis optio adipisci incidunt, molestias assumenda repellat minus reprehenderit, et recusandae quos doloremque quo enim soluta. Delectus perspiciatis pariatur placeat saepe asperiores.
-    Cupiditate saepe, corporis atque a voluptates neque </p>
+      <h3>Car Seats</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis optio adipisci incidunt, molestias assumenda repellat minus reprehenderit, et recusandae quos doloremque quo enim soluta. Delectus perspiciatis pariatur placeat saepe asperiores.
+      Cupiditate saepe, corporis atque a voluptates neque </p>
    </div>
 
   </div>

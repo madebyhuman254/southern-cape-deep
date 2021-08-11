@@ -14,7 +14,7 @@
         <img class="img" src="@/assets/landing-page.png" alt="" srcset="" />
       </div>
     </section>
-    <section class="container">
+    <!-- <section class="container">
       <p>about the company...</p>
       <h1>About Us</h1>
       <span>
@@ -23,7 +23,7 @@
         quisquam voluptatem incidunt, sint harum praesentium vero tempore sunt
         iure. Deleniti, officia?
       </span>
-    </section>
+    </section> -->
   </div>
 </template>
 
