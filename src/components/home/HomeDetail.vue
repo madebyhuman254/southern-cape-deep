@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="container">
+    <section class="flex container pd--lg">
       <div>
         <p>We offer the best cleaning and pest control services</p>
         <h1>
@@ -10,8 +10,8 @@
         </h1>
         <button class="btn btn-work" @click="goToWork()">Our Work</button>
       </div>
-      <div class="image-container">
-        <img src="@/assets/landing-page.png" alt="" srcset="" />
+      <div style="padding-left: 10rem">
+        <img class="img" src="@/assets/landing-page.png" alt="" srcset="" />
       </div>
     </section>
     <section class="container">
@@ -44,11 +44,11 @@ export default {
   background: green;
   /* text-align: center; */
 }
-img {
+.img {
   object-fit: right;
   object-position: 5vw -5vmin;
   height: min(65vh, 500px);
-  width: 60%;
+  width: 80%;
   margin:0;
 }
 

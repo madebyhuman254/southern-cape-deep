@@ -70,14 +70,39 @@ body {
   transition: all 0.3s ease-in;
 }
 
-.container {
-     width: 1200px; /*800px before change*/
-  margin: calc(var(--nav-height) + 40px) auto 0 auto;
-}
-
 .route-enter-to,
 .route-leave-from {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Utils */
+
+.flex {
+  display: flex;
+}
+
+.flex--gap {
+
+}
+
+.flex--center {
+  justify-content: center;
+}
+
+
+.flex--wrap {
+  flex-wrap: wrap;
+}
+
+.pd--lg {
+  padding-top: 6rem;
+}
+
+.container {
+     width: 1200px; /*800px before change*/
+  margin: 0 auto;
+  /* margin: calc(var(--nav-height) + 40px) auto 0 auto; */
+}
+
 </style>
