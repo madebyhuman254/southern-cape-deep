@@ -1,50 +1,43 @@
 <template>
-      <v-app-bar
-      app
-      color="primary"
-      dark
-    >
+  <v-app-bar app color="primary" dark>
     <v-tab to="/">Company Logo</v-tab>
 
     <v-spacer></v-spacer>
 
-      <v-tab 
-      v-for="(item, i) in items" 
-      :key="i" 
-      :to="item.link" link>
-        <v-icon>{{item.icon}}</v-icon>
-       {{item.text}}
-      </v-tab>
-    </v-app-bar>
+    <v-tab v-for="(item, i) in items" :key="i" :to="item.link" link>
+      <v-icon>{{ item.icon }}</v-icon>
+      {{ item.text }}
+    </v-tab>
+  </v-app-bar>
 </template>
 
 <script>
 export default {
-  name: "Navigation",
+  name: 'Navigation',
   data: () => ({
     items: [
       {
-        icon: 'mdi-home-outline',
         text: 'Home',
         link: '/',
       },
       {
-        icon: 'mdi-image-multiple-outline',
+        text: 'About',
+        link: '/about',
+      },
+      {
         text: 'Our Work',
         link: '/ourwork',
       },
       {
-        icon: 'mdi-clipboard-list-outline',
         text: 'Services',
         link: '/services',
       },
       {
-        icon: 'mdi-phone-outline',
         text: 'Contact',
-        link: '/footer',
+        link: '/contact',
       },
-    ]
-  })
+    ],
+  }),
 };
 </script>
 
@@ -74,7 +67,6 @@ a.router-link-active {
   margin: 0 0.1em 0.1em 0;
   border: 0.16em solid rgba(255, 255, 255, 0);
   cursor: pointer;
-
 }
 
 h1 {
